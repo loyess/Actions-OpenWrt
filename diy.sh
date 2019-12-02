@@ -12,6 +12,6 @@
 sed -i '44s/partition@20000/partition@30000/' target/linux/ramips/dts/PSG1218.dtsi
 sed -i '50s/partition@30000/partition@40000/' target/linux/ramips/dts/PSG1218.dtsi
 sed -i '56s/partition@40000/partition@50000/' target/linux/ramips/dts/PSG1218.dtsi
-sed -i 's/0x7b0000/0x1fb0000/' ./target/linux/ramips/dts/PSG1218.dtsi
+sed -i 's/0x7b0000/0x1fb0000/' target/linux/ramips/dts/PSG1218.dtsi
 sed -i '/\ \ DTS\ \:\=\ PSG1218A/a\\ \ IMAGE_SIZE\ \:\=\ \$\(ralink_default_fw_size_32M\)' target/linux/ramips/image/mt7620.mk
 
